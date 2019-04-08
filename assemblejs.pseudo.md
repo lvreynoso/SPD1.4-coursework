@@ -13,7 +13,7 @@ Third, we add the actual instrumental tracks. We start a loop for each track.
         We loop through the array of notes we have:
         For each note,
             We add the delta time of the note to our overall tick count.
-            If the note is a different instrument from the one currently selected, we insert an”instrument-change” event into the array of track events.
+            If the note is a different instrument from the one currently selected, we insert an "instrument-change" event into the array of track events.
             We create the “note on” event and mark what tick this occurs at.
             Insert the event into the array of track events.
             We create the “note off” event and mark what tick this occurs at.
