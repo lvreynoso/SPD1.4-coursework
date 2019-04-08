@@ -1,5 +1,6 @@
 Assemble is a function that takes in data about a collection of notes and from those notes creates a javascript object that follows the midifile library format. The output object should be able to be directly converted into a midi file by the library.
 
+```
 First, we create a new midiFile object. This object will be the one returned by the function. Then we set what type of MIDI file the object is supposed to represent. Then we set the time division (or ticks per beat) for the song.
 
 Second, we create a meta track (track zero) with the meta information necessary for the song. We create an array of events, add a time signature event, and a tempo event. We finally add an end-of-track event to the array and make it the track’s events.
@@ -23,3 +24,4 @@ Third, we add the actual instrumental tracks. We start a loop for each track.
         We set the track events to the array of events we just created.
 
 When done, return the midiFile object.
+```
